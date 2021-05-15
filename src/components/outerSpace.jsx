@@ -33,14 +33,14 @@ export default class OuterSpace extends Component {
       point = [
         (Math.random() * width) / 2 - width / 4,
         (Math.random() * height) / 2 - height / 4,
-        (Math.random() * width) / 2 - width / 4
+        (Math.random() * width) / 2 - width / 4,
       ];
       points.push(point);
     }
 
     function draw() {
       // This just clears the screen
-      // context.fillStyle = "rgb(0, 0, 0)";
+      context.fillStyle = "rgb(34,9,49)";
       context.fillRect(0, 0, width, height);
 
       // This loop takes a bunch of 3D vertices and draws them using a 2D perspective projection

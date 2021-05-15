@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import styled from "@emotion/styled";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
