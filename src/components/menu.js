@@ -26,7 +26,7 @@ const MenuContainer = styled.div`
 const MenuLink = styled.div`
   color: white;
   text-decoration: none;
-  font-family: Verdana;
+  font-family: "retro_computer_personal_use";
   font-size: 2rem;
 
   animation: textShadow 7.6s infinite;
