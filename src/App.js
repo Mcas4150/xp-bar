@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import styled from "@emotion/styled";
+import "./App.css";
+
+import Menu from "./components/menu";
+import OuterSpace from "./components/outerSpace";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="background">
+      <OuterSpace />
+      <div className="crt"></div>
+      <Content>
+        <Menu />
+      </Content>
     </div>
   );
 }
 
 export default App;
+
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+`;
