@@ -3,8 +3,11 @@ import styled from "@emotion/styled";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-import Menu from "./components/menu";
-import About from "./components/pages/about"
+import Main from "./components/pages/main";
+import About from "./components/pages/about";
+import Games from "./components/pages/games";
+import Contact from "./components/pages/contact";
+import Menu from "./components/pages/menu";
 import OuterSpace from "./components/outerSpace";
 
 function App() {
@@ -15,8 +18,11 @@ function App() {
         <div className="crt"></div>
         <Content>
           <Switch>
-            <Route exact path="/" component={Menu} />
+            <Route exact path="/" component={Main} />
             <Route path="/about" component={About} />
+            <Route path="/games" component={Games} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/menu" component={Menu} />
           </Switch>
         </Content>
       </div>

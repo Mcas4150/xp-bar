@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
+import styled from "@emotion/styled";
 import PageHeader from "./pageHeader"
 
-export default class About extends Component {
+export default class Contact extends Component {
   render() {
     return (
       <div>
         <PageHeader/>
-          About Page
+          Contact Page
       </div>
     )
   }
 }
+
+const ContactContainer = styled.div`
+
+
+`;
