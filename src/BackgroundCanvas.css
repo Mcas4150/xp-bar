@@ -2,4 +2,6 @@ canvas {
   border-radius: 100px;
   padding: 50px;
   z-index: 0;
+
+  width: 100vw;
 }
