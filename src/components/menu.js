@@ -7,10 +7,10 @@ export default class Menu extends Component {
     return (
       <MenuContainer>
         {/* <MenuLink to={{ pathname: `/about` }} >About2</MenuLink> */}
-        <MenuLink>About</MenuLink>
-        <MenuLink>Games</MenuLink>
-        <MenuLink>Menu</MenuLink>
-        <MenuLink>Contact</MenuLink>
+        <MenuLink to={{ pathname: `/about` }}>About</MenuLink>
+        <MenuLink to={{ pathname: `/about` }}>Games</MenuLink>
+        <MenuLink to={{ pathname: `/about` }}>Menu</MenuLink>
+        <MenuLink to={{ pathname: `/about` }}>Contact</MenuLink>
       </MenuContainer>
     );
   }
@@ -23,7 +23,7 @@ const MenuContainer = styled.div`
   align-items: center;
 `;
 
-const MenuLink = styled.div`
+const MenuLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-family: "retro_computer_personal_use";
