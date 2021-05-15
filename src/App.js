@@ -47,3 +47,5 @@ const Content = styled.div`
   height: 100vh;
   align-items: center;
 `;
+
+const Frame = styled.div``

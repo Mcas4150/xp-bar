@@ -1,6 +1,5 @@
 canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-radius: 100px;
+  padding: 50px;
   z-index: 0;
 }
