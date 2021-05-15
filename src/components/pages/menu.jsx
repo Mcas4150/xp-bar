@@ -10,7 +10,7 @@ export default class Menu extends Component {
         <MenuContainer>
           <MenuBorder>
             <Tables>
-              <Table>
+              <Food>
                 <THeader>Food</THeader>
                 <TList>
                   <TItem>
@@ -98,8 +98,8 @@ export default class Menu extends Component {
                     <Price>500</Price>
                   </TItem>
                 </TList>
-              </Table>
-              <Table>
+              </Food>
+              <Drinks>
                 <THeader>Drinks</THeader>
                 <TList>
                   <TItem>
@@ -230,7 +230,7 @@ export default class Menu extends Component {
                     <Price>500</Price>
                   </TItem>
                 </TList>
-              </Table>
+              </Drinks>
             </Tables>
           </MenuBorder>
         </MenuContainer>
@@ -239,7 +239,9 @@ export default class Menu extends Component {
   }
 }
 
-const MenuContainer = styled.div``;
+const MenuContainer = styled.div`
+  width: 75vw;
+`;
 
 const MenuBorder = styled.div`
   border: 3px dotted white;
@@ -247,11 +249,23 @@ const MenuBorder = styled.div`
 `;
 
 const Tables = styled.div`
-  display: flex;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "food drinks";
 `;
 const Table = styled.div`
   padding: 15px;
 `;
+
+const Food = styled(Table)`
+  grid-area: food;
+`;
+
+const Drinks = styled(Table)`
+  grid-area: drinks;
+`;
+
 const THeader = styled.div`
   font-size: 2rem;
   font-family: retro_computer_personal_use;
@@ -261,8 +275,13 @@ const TList = styled.div``;
 const TItem = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
 `;
 const Info = styled.div``;
-const Name = styled.div``;
+const Name = styled.div`
+  font-size: 1rem;
+`;
 const Price = styled.div``;
-const Description = styled.div``;
+const Description = styled.div`
+  font-size: 0.85rem;
+`;
