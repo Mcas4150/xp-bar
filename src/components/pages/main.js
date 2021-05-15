@@ -8,8 +8,8 @@ export default class Main extends Component {
       <MainContainer>
         {/* <MainLink to={{ pathname: `/about` }} >About2</MainLink> */}
         <MainLink to={{ pathname: `/about` }}>About</MainLink>
+        <MainLink to={{ pathname: `/menu` }}>Menu</MainLink>{" "}
         <MainLink to={{ pathname: `/games` }}>Games</MainLink>
-        <MainLink to={{ pathname: `/menu` }}>Menu</MainLink>
         <MainLink to={{ pathname: `/contact` }}>Contact</MainLink>
       </MainContainer>
     );
