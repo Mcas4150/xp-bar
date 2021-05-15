@@ -165,9 +165,3 @@
   margin: 50px;
 }
 
-.background {
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-  display: flex
-}

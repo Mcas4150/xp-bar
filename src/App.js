@@ -13,7 +13,7 @@ import OuterSpace from "./components/outerSpace";
 function App() {
   return (
     <Router>
-      <div className="background">
+      <Background>
         <OuterSpace />
         <div className="crt"></div>
         <Content>
@@ -25,12 +25,19 @@ function App() {
             <Route path="/menu" component={Menu} />
           </Switch>
         </Content>
-      </div>
+      </Background>
     </Router>
   );
 }
 
 export default App;
+
+const Background = styled.div`
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+`;
 
 const Content = styled.div`
   display: flex;
