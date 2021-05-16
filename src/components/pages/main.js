@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
+import chromeLogo from "../../imgs/chrome1.png";
 
 export default class Main extends Component {
   render() {
     return (
       <MainContainer>
         {/* <MainLink to={{ pathname: `/about` }} >About2</MainLink> */}
+        <Logo src={chromeLogo}></Logo>
         <MainLink to={{ pathname: `/about` }}>About</MainLink>
         <MainLink to={{ pathname: `/menu` }}>Menu</MainLink>{" "}
         <MainLink to={{ pathname: `/games` }}>Games</MainLink>
@@ -22,6 +24,13 @@ const MainContainer = styled.div`
   justify-conter: center;
   flex-direction: column;
   align-items: center;
+`;
+
+const Logo = styled.img`
+  // background-image: url(${chromeLogo});
+  margin-left: 50px;
+  height: 300px;
+  width: 300px;
 `;
 
 const MainLink = styled(Link)`

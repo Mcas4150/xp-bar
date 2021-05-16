@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
+
 import Main from "./components/pages/main";
 import About from "./components/pages/about";
 import Games from "./components/pages/games";
