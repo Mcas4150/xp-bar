@@ -56,6 +56,8 @@ export default class Games extends Component {
 const GamesPage = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const GamesContainer = styled.div`
@@ -89,6 +91,8 @@ const XBLogo = styled(Logo)``;
 const PSLogo = styled(Logo)``;
 const BoardLogo = styled(Logo)`
   object-fit: fill;
+  height: 100px;
+  width: 100px;
 `;
 const Description = styled.div``;
 const Playstation = styled(System)``;
