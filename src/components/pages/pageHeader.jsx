@@ -7,7 +7,7 @@ export default class PageHeader extends Component {
     return (
       <HeaderContainer>
         <Title>{this.props.title}</Title>
-        <MenuLink to={{ pathname: `/` }}>{"<--"}</MenuLink>
+        <MenuLink to={{ pathname: `/` }}>{"<-MAIN"}</MenuLink>
       </HeaderContainer>
     );
   }
