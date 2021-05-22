@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import PageHeader from "./pageHeader"
+import { ContentPage } from "../../utils/shared";
 
 export default class VipRoom extends Component {
   render() {
     return (
-      <div>
-        <PageHeader/>
+      <ContentPage>
+        <PageHeader title="VIP Room"/>
           Vip Room Page
-      </div>
+      </ContentPage>
     )
   }
 }

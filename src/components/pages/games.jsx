@@ -5,6 +5,7 @@ import xboxLogo from "../../imgs/Xbox.png";
 import psLogo from "../../imgs/playstation.png";
 import switchLogo from "../../imgs/switch.png";
 import chessLogo from "../../imgs/chess.png";
+import { ContentPage } from "../../utils/shared";
 
 export const Games = () => {
   const [dimensions, setDimensions] = useState({
@@ -76,18 +77,11 @@ export const Games = () => {
   );
 };
 
-const GamesPage = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
+const GamesPage = styled(ContentPage)``;
 
 const GamesContainer = styled.div`
   width: 75%;
   display: grid;
-  grid-template-areas: "xbox playstation" "switch board";
-  grid-template-columns: "1fr 1fr";
 `;
 
 const System = styled.div`

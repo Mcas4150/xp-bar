@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-
 import Main from "./components/pages/main";
 import About from "./components/pages/about";
 import { Games } from "./components/pages/games";
@@ -39,6 +38,7 @@ const Background = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
+  overflow: hidden;
 `;
 
 const Content = styled.div`
@@ -48,6 +48,5 @@ const Content = styled.div`
   width: 100vw;
   height: 100vh;
   align-items: center;
+  overflow: hidden;
 `;
-
-const Frame = styled.div``;
