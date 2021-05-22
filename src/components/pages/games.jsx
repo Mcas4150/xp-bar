@@ -39,13 +39,15 @@ export const Games = () => {
       <GamesContainer style={TileStyle}>
         <Xbox>
           <XBLogo src={xboxLogo} />
-          <Description>
-            Enjoy hundreds of titles provided by Xbox Gamepass and EA Play.
-            Whether it's taking down the Covenant again as 117, fighting back
-            waves of the horde with your friends, or landing the sweet goal in
-            Fifa, the choice is yours!
-          </Description>
-          <XBButton>View Gamepass Games</XBButton>
+          <div>
+            <Description>
+              Enjoy hundreds of titles provided by Xbox Gamepass and EA Play.
+              Whether it's taking down the Covenant again as 117, fighting back
+              waves of the horde with your friends, or landing the sweet goal in
+              Fifa, the choice is yours!
+            </Description>
+            <XBButton>View Gamepass Games</XBButton>
+          </div>
         </Xbox>
         <Playstation>
           <PSLogo src={psLogo} />

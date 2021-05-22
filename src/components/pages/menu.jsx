@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 import PageHeader from "./pageHeader";
+import { ContentPage } from "../../utils/shared";
 
 export const Menu = () => {
   const [dimensions, setDimensions] = useState({
@@ -29,10 +30,10 @@ export const Menu = () => {
   });
 
   return (
-    <div>
+    <MenuPage title="menu">
       <PageHeader />
       <MenuContainer>
-        <MenuBorder>
+        <div data-augmented-ui="tl-clip br-clip both">
           <Tables style={TileStyle}>
             <Food>
               <THeader>Food</THeader>
@@ -256,11 +257,13 @@ export const Menu = () => {
               </TList>
             </Drinks>
           </Tables>
-        </MenuBorder>
+        </div>
       </MenuContainer>
-    </div>
+    </MenuPage>
   );
 };
+
+const MenuPage = styled(ContentPage)``;
 
 const MenuContainer = styled.div`
   width: 75vw;
@@ -299,6 +302,7 @@ const TItem = styled.div`
 `;
 const Info = styled.div``;
 const Name = styled.div`
+  font-weight: bold;
   font-size: 1rem;
 `;
 const Price = styled.div``;
