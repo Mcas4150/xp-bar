@@ -39,7 +39,7 @@ export const Games = () => {
       <GamesContainer style={TileStyle}>
         <Xbox>
           <XBLogo src={xboxLogo} />
-          <div>
+          <Border data-augmented-ui="tl-clip br-clip both">
             <Description>
               Enjoy hundreds of titles provided by Xbox Gamepass and EA Play.
               Whether it's taking down the Covenant again as 117, fighting back
@@ -47,37 +47,50 @@ export const Games = () => {
               Fifa, the choice is yours!
             </Description>
             <XBButton>View Gamepass Games</XBButton>
-          </div>
+          </Border>
         </Xbox>
         <Playstation>
           <PSLogo src={psLogo} />
-          <Description>
-            Fancy yourself more of a PlayStation fan? No Problem! WIth both the
-            PlayStation Plus Coollection and PlayStation Now, you will be able
-            to play hundreds of games spanning across all generations of
-            PlayStation. The choice is yours!
-          </Description>
-          <PSButton>View PS Now Games</PSButton>
+          <Border data-augmented-ui="tl-clip br-clip both">
+            <Description>
+              Fancy yourself more of a PlayStation fan? No Problem! WIth both
+              the PlayStation Plus Coollection and PlayStation Now, you will be
+              able to play hundreds of games spanning across all generations of
+              PlayStation. The choice is yours!
+            </Description>
+            <PSButton>View PS Now Games</PSButton>
+          </Border>
         </Playstation>
         <Switch>
           <Logo src={switchLogo} />
-          <Description>
-            Want to race your friends while dodging red shells in Mario Cart?
-            How about testing your Pokemon trainer skills by going up against
-            the Elite 4 or helping Link rescue Zelda once again? With our
-            in-house Switch, you can do all this and more!
-          </Description>
+          <Border data-augmented-ui="tl-clip br-clip both">
+            <Description>
+              Want to race your friends while dodging red shells in Mario Cart?
+              How about testing your Pokemon trainer skills by going up against
+              the Elite 4 or helping Link rescue Zelda once again? With our
+              in-house Switch, you can do all this and more!
+            </Description>
+          </Border>
         </Switch>
         <Board>
           <BoardLogo src={chessLogo} />
-          <Description>
-            Want to a more physical gaming experience? Try a hand at
-          </Description>
+          <Border data-augmented-ui="tl-clip br-clip both">
+            <Description>
+              Want to a more physical gaming experience? Try a hand at
+            </Description>
+          </Border>
         </Board>
       </GamesContainer>
     </GamesPage>
   );
 };
+
+const Border = styled.div`
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
 
 const GamesPage = styled(ContentPage)`
   width: 75%;
@@ -94,7 +107,10 @@ const System = styled.div`
   align-items: center;
   padding: 25px;
 `;
-const Button = styled.button``;
+const Button = styled.button`
+  margin: 15px;
+  height: 25px;
+`;
 const PSButton = styled(Button)`
   background-color: blue;
 `;
