@@ -35,7 +35,7 @@ export const Games = () => {
 
   return (
     <GamesPage>
-      <PageHeader />
+      <PageHeader title="games" />
       <GamesContainer style={TileStyle}>
         <Xbox>
           <XBLogo src={xboxLogo} />
@@ -79,10 +79,11 @@ export const Games = () => {
   );
 };
 
-const GamesPage = styled(ContentPage)``;
+const GamesPage = styled(ContentPage)`
+  width: 75%;
+`;
 
 const GamesContainer = styled.div`
-  width: 75%;
   display: grid;
 `;
 

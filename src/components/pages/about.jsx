@@ -6,7 +6,7 @@ import { ContentPage } from "../../utils/shared";
 export default class About extends Component {
   render() {
     return (
-      <ContentPage>
+      <AboutPage>
         <PageHeader title="About Us" />
 
         <AboutContainer data-augmented-ui="tl-clip br-clip both">
@@ -24,12 +24,15 @@ export default class About extends Component {
             something for every gamer at XP Gaming Bar! #LevelUp!
           </p>
         </AboutContainer>
-      </ContentPage>
+      </AboutPage>
     );
   }
 }
 
+const AboutPage = styled(ContentPage)`
+  width: 80%;
+`;
+
 const AboutContainer = styled.div`
   padding: 25px;
-  width: 80%;
 `;

@@ -30,8 +30,8 @@ export const Menu = () => {
   });
 
   return (
-    <MenuPage title="menu">
-      <PageHeader />
+    <MenuPage >
+      <PageHeader title="menu"/>
       <MenuContainer>
         <div data-augmented-ui="tl-clip br-clip both">
           <Tables style={TileStyle}>
