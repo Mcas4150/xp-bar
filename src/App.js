@@ -42,8 +42,6 @@ const Background = styled.div`
 `;
 
 const Content = styled.div`
-  display: flex;
-  justify-content: center;
   position: absolute;
   width: 100vw;
   height: 100vh;

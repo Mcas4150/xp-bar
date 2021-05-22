@@ -2,22 +2,27 @@ import React, { Component } from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import chromeLogo from "../../imgs/chrome1.png";
+import { ContentPage } from "../../utils/shared";
 
 export default class Main extends Component {
   render() {
     return (
-      <MainContainer>
-        {/* <MainLink to={{ pathname: `/about` }} >About2</MainLink> */}
-        <Logo src={chromeLogo}></Logo>
-        <MainLink to={{ pathname: `/about` }}>About</MainLink>
-        <MainLink to={{ pathname: `/menu` }}>Menu</MainLink>{" "}
-        <MainLink to={{ pathname: `/games` }}>Games</MainLink>
-        <MainLink to={{ pathname: `/vip-room` }}>Vip Room</MainLink>
-        <MainLink to={{ pathname: `/contact` }}>Contact</MainLink>
-      </MainContainer>
+      <MainPage>
+        <MainContainer>
+          {/* <MainLink to={{ pathname: `/about` }} >About2</MainLink> */}
+          <Logo src={chromeLogo}></Logo>
+          <MainLink to={{ pathname: `/about` }}>About</MainLink>
+          <MainLink to={{ pathname: `/menu` }}>Menu</MainLink>{" "}
+          <MainLink to={{ pathname: `/games` }}>Games</MainLink>
+          <MainLink to={{ pathname: `/vip-room` }}>Vip Room</MainLink>
+          <MainLink to={{ pathname: `/contact` }}>Contact</MainLink>
+        </MainContainer>
+      </MainPage>
     );
   }
 }
+
+const MainPage = styled(ContentPage)``;
 
 const MainContainer = styled.div`
   display: flex;
