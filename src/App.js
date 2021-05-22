@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import Main from "./components/pages/main";
-import About from "./components/pages/about";
+import { About } from "./components/pages/about";
 import { Games } from "./components/pages/games";
 import Contact from "./components/pages/contact";
 import { Menu } from "./components/pages/menu";
@@ -49,5 +49,4 @@ const Content = styled.div`
   height: 100vh;
   align-items: center;
   overflow: auto;
-  
 `;
