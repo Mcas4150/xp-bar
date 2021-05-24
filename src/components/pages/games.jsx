@@ -77,7 +77,11 @@ export const Games = () => {
             <BoardLogo src={chessLogo} />
             <Border data-augmented-ui="tl-clip br-clip both">
               <Description>
-                Want to a more physical gaming experience? Try a hand at
+                Want to a more physical gaming experience? Try a hand at one of
+                our board or card games. Whether its the epics adventures of
+                Dungeons and Dragons, the exhilirating combat of Yu-Gi-Oh, or
+                even the brutal hilarity of Cards Against Humanity, all games
+                are fair game!
               </Description>
             </Border>
           </Board>

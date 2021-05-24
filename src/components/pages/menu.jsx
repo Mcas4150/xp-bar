@@ -269,11 +269,6 @@ const MenuContainer = styled.div`
   width: 75vw;
 `;
 
-const MenuBorder = styled.div`
-  border: 3px dotted white;
-  padding: 25px;
-`;
-
 const Tables = styled.div`
   display: grid;
 `;

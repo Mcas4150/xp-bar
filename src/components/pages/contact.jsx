@@ -7,8 +7,8 @@ export default class Contact extends Component {
   render() {
     return (
       <ContentPage>
-        <PageHeader title="Contact Us"/>
-        Contact Page
+        <PageHeader title="Contact Us" />
+        <ContactContainer>Contact</ContactContainer>
       </ContentPage>
     );
   }
