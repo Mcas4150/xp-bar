@@ -34,56 +34,65 @@ export const Games = () => {
   });
 
   return (
-    <GamesPage>
-      <PageHeader title="games" />
-      <GamesContainer style={TileStyle}>
-        <Xbox>
-          <XBLogo src={xboxLogo} />
-          <Border data-augmented-ui="tl-clip br-clip both">
-            <Description>
-              Enjoy hundreds of titles provided by Xbox Gamepass and EA Play.
-              Whether it's taking down the Covenant again as 117, fighting back
-              waves of the horde with your friends, or landing the sweet goal in
-              Fifa, the choice is yours!
-            </Description>
-            <XBButton>View Gamepass Games</XBButton>
-          </Border>
-        </Xbox>
-        <Playstation>
-          <PSLogo src={psLogo} />
-          <Border data-augmented-ui="tl-clip br-clip both">
-            <Description>
-              Fancy yourself more of a PlayStation fan? No Problem! WIth both
-              the PlayStation Plus Coollection and PlayStation Now, you will be
-              able to play hundreds of games spanning across all generations of
-              PlayStation. The choice is yours!
-            </Description>
-            <PSButton>View PS Now Games</PSButton>
-          </Border>
-        </Playstation>
-        <Switch>
-          <Logo src={switchLogo} />
-          <Border data-augmented-ui="tl-clip br-clip both">
-            <Description>
-              Want to race your friends while dodging red shells in Mario Cart?
-              How about testing your Pokemon trainer skills by going up against
-              the Elite 4 or helping Link rescue Zelda once again? With our
-              in-house Switch, you can do all this and more!
-            </Description>
-          </Border>
-        </Switch>
-        <Board>
-          <BoardLogo src={chessLogo} />
-          <Border data-augmented-ui="tl-clip br-clip both">
-            <Description>
-              Want to a more physical gaming experience? Try a hand at
-            </Description>
-          </Border>
-        </Board>
-      </GamesContainer>
-    </GamesPage>
+    <Justify>
+      <GamesPage>
+        <PageHeader title="games" />
+        <GamesContainer style={TileStyle}>
+          <Xbox>
+            <XBLogo src={xboxLogo} />
+            <Border data-augmented-ui="tl-clip br-clip both">
+              <Description>
+                Enjoy hundreds of titles provided by Xbox Gamepass and EA Play.
+                Whether it's taking down the Covenant again as 117, fighting
+                back waves of the horde with your friends, or landing the sweet
+                goal in Fifa, the choice is yours!
+              </Description>
+              <XBButton>View Gamepass Games</XBButton>
+            </Border>
+          </Xbox>
+          <Playstation>
+            <PSLogo src={psLogo} />
+            <Border data-augmented-ui="tl-clip br-clip both">
+              <Description>
+                Fancy yourself more of a PlayStation fan? No Problem! WIth both
+                the PlayStation Plus Coollection and PlayStation Now, you will
+                be able to play hundreds of games spanning across all
+                generations of PlayStation. The choice is yours!
+              </Description>
+              <PSButton>View PS Now Games</PSButton>
+            </Border>
+          </Playstation>
+          <Switch>
+            <Logo src={switchLogo} />
+            <Border data-augmented-ui="tl-clip br-clip both">
+              <Description>
+                Want to race your friends while dodging red shells in Mario
+                Cart? How about testing your Pokemon trainer skills by going up
+                against the Elite 4 or helping Link rescue Zelda once again?
+                With our in-house Switch, you can do all this and more!
+              </Description>
+            </Border>
+          </Switch>
+          <Board>
+            <BoardLogo src={chessLogo} />
+            <Border data-augmented-ui="tl-clip br-clip both">
+              <Description>
+                Want to a more physical gaming experience? Try a hand at
+              </Description>
+            </Border>
+          </Board>
+        </GamesContainer>
+      </GamesPage>
+    </Justify>
   );
 };
+
+const Justify = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 
 const Border = styled.div`
   padding: 25px;

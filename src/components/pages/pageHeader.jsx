@@ -7,11 +7,19 @@ export default class PageHeader extends Component {
     return (
       <HeaderContainer>
         <Title>{this.props.title}</Title>
-        <MenuLink to={{ pathname: `/` }}>{"<<"}</MenuLink>
+        <LinkContainer>
+          <MenuLink to={{ pathname: `/` }}>{"<<"}</MenuLink>
+        </LinkContainer>
       </HeaderContainer>
     );
   }
 }
+
+const LinkContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const HeaderContainer = styled.div`
   // display: flex;
@@ -26,7 +34,7 @@ const HeaderContainer = styled.div`
 const Title = styled.div`
   display: flex;
   justify-content: center;
-  text-size: 3rem;
+  font-size: 2.25rem;
   color: white;
   grid-area: title;
   font-family: retro_computer_personal_use;
@@ -37,6 +45,7 @@ const MenuLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-family: retro_computer_personal_use;
+  font-size: 1.25rem;
   animation: textShadow 7.6s infinite;
   grid-area: back;
 `;
