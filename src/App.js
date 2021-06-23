@@ -5,7 +5,7 @@ import "./App.css";
 import Main from "./components/pages/main";
 import { About } from "./components/pages/about";
 import { Games } from "./components/pages/games";
-import Contact from "./components/pages/contact";
+import { Contact } from "./components/pages/contact";
 import { Menu } from "./components/pages/menu";
 import { VipRoom } from "./components/pages/vip";
 import OuterSpace from "./components/outerSpace";

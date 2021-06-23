@@ -36,7 +36,7 @@ export const Menu = () => {
         <div data-augmented-ui="tl-clip br-clip both">
           <Tables style={TileStyle}>
             <Food>
-              <THeader>Food</THeader>
+              <THeader>Side Quests</THeader>
               <TList>
                 <TItem>
                   <Info>
@@ -80,6 +80,9 @@ export const Menu = () => {
                   </Info>
                   <Price>500</Price>
                 </TItem>
+                </TList>
+                <THeader>Main Quests</THeader>
+              <TList>
                 <TItem>
                   <Info>
                     <Name>Cheeseburger</Name>
@@ -254,6 +257,29 @@ export const Menu = () => {
                   </Info>
                   <Price>500</Price>
                 </TItem>
+              </TList>
+              <THeader>Legendary Drinks</THeader>
+              <TList>
+                <TItem><Info>
+                    <Name>Pharaoh</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>1200</Price></TItem>
+                  <TItem><Info>
+                    <Name>Nord Warrior</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>1200</Price></TItem>
+                  <TItem><Info>
+                    <Name>Master Trainer</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>1200</Price></TItem>
+                  <TItem><Info>
+                    <Name>Vacation Juice</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>1200</Price></TItem>
               </TList>
             </Drinks>
           </Tables>

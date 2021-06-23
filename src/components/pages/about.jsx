@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import PageHeader from "./pageHeader";
 import styled from "@emotion/styled";
+import ted from "../../imgs/ted.png";
+import ester from "../../imgs/ester.png";
 import { ContentPage } from "../../utils/shared";
 
 export const About = () => {
@@ -33,7 +35,18 @@ export const About = () => {
     <Justify>
       <AboutPage style={TileStyle}>
         <PageHeader title="About Us" />
-
+        <AvatarContainer>
+          <Avatar>
+            <Image src={ted}></Image>
+            <Name></Name>
+            <Class></Class>
+          </Avatar>
+          <Avatar>
+            <Image src={ester}></Image>
+            <Name></Name>
+            <Class></Class>
+          </Avatar>
+        </AvatarContainer>
         <AboutContainer data-augmented-ui="tl-clip br-clip both">
           <p>
             XP Gaming Bar is a video game themed bar founded by gamers for
@@ -74,3 +87,25 @@ const TileStyleMax = {
 const TileStyleMin = {
   width: "80%",
 };
+
+const AvatarContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+`;
+
+const Avatar = styled.div``;
+
+const Name = styled.div``;
+
+const Info = styled.div``;
+
+const Image = styled.img`
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin: 15px;
+`;
+
+const Class = styled.div``;
