@@ -106,7 +106,7 @@ const Border = styled.div`
 `;
 
 const GamesPage = styled(ContentPage)`
-  width: 75%;
+  // width: 75%;
 `;
 
 const GamesContainer = styled.div`
@@ -119,6 +119,7 @@ const System = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 25px;
+  max-width: 500px;
 `;
 const Button = styled.button`
   margin: 15px;
