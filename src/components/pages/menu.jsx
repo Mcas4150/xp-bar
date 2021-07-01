@@ -9,10 +9,17 @@ export const Menu = () => {
     width: document.documentElement.clientWidth,
   });
 
-  let TileStyle =
-    dimensions.width <= 800 || dimensions.height <= 600
-      ? TileStyleMin
-      : TileStyleMax;
+  let TileStyle;
+  // dimensions.width <= 800 || dimensions.height <= 600
+  //   ? TileStyleMin
+  //   : TileStyleMax;
+  if (dimensions.width > 1300) {
+    TileStyle = TileStyleMax;
+  } else if (1300 > dimensions.width > 800) {
+    TileStyle = TileStyleMid;
+  } else {
+    TileStyle = TileStyleMin;
+  }
 
   useEffect(() => {
     function handleResize() {
@@ -30,8 +37,8 @@ export const Menu = () => {
   });
 
   return (
-    <MenuPage >
-      <PageHeader title="menu"/>
+    <MenuPage>
+      <PageHeader title="menu" />
       <MenuContainer>
         <div data-augmented-ui="tl-clip br-clip both">
           <Tables style={TileStyle}>
@@ -80,8 +87,8 @@ export const Menu = () => {
                   </Info>
                   <Price>500</Price>
                 </TItem>
-                </TList>
-                <THeader>Main Quests</THeader>
+              </TList>
+              <THeader>Main Quests</THeader>
               <TList>
                 <TItem>
                   <Info>
@@ -258,30 +265,41 @@ export const Menu = () => {
                   <Price>500</Price>
                 </TItem>
               </TList>
+            </Drinks>
+            <LegendaryDrinks>
               <THeader>Legendary Drinks</THeader>
               <TList>
-                <TItem><Info>
+                {" "}
+                <TItem>
+                  <Info>
                     <Name>Pharaoh</Name>
                     <Description>Lorum Ipsum</Description>
                   </Info>
-                  <Price>1200</Price></TItem>
-                  <TItem><Info>
+                  <Price>1200</Price>
+                </TItem>
+                <TItem>
+                  <Info>
                     <Name>Nord Warrior</Name>
                     <Description>Lorum Ipsum</Description>
                   </Info>
-                  <Price>1200</Price></TItem>
-                  <TItem><Info>
+                  <Price>1200</Price>
+                </TItem>
+                <TItem>
+                  <Info>
                     <Name>Master Trainer</Name>
                     <Description>Lorum Ipsum</Description>
                   </Info>
-                  <Price>1200</Price></TItem>
-                  <TItem><Info>
+                  <Price>1200</Price>
+                </TItem>
+                <TItem>
+                  <Info>
                     <Name>Vacation Juice</Name>
                     <Description>Lorum Ipsum</Description>
                   </Info>
-                  <Price>1200</Price></TItem>
+                  <Price>1200</Price>
+                </TItem>
               </TList>
-            </Drinks>
+            </LegendaryDrinks>
           </Tables>
         </div>
       </MenuContainer>
@@ -292,7 +310,7 @@ export const Menu = () => {
 const MenuPage = styled(ContentPage)``;
 
 const MenuContainer = styled.div`
-  width: 75vw;
+  // width: 75vw;
 `;
 
 const Tables = styled.div`
@@ -300,6 +318,7 @@ const Tables = styled.div`
 `;
 const Table = styled.div`
   padding: 15px;
+  max-width: 350px;
 `;
 
 const Food = styled(Table)`
@@ -308,6 +327,10 @@ const Food = styled(Table)`
 
 const Drinks = styled(Table)`
   grid-area: drinks;
+`;
+
+const LegendaryDrinks = styled(Table)`
+  grid-area: leg-drinks;
 `;
 
 const THeader = styled.div`
@@ -332,11 +355,20 @@ const Description = styled.div`
 `;
 
 const TileStyleMax = {
+  maxHeight: "800px",
+  maxWidth: "1100px",
+  gridTemplateAreas: `'food drinks leg-drinks'`,
+  // gridTemplateColumns: "1fr 1fr 1fr ",
+  gridTemplateColumns: `repeat(auto-fill, minmax(350px, 1fr))`,
+};
+
+const TileStyleMid = {
+  maxHeight: "800px",
   gridTemplateAreas: `'food drinks'`,
   gridTemplateColumns: "1fr 1fr",
 };
 
 const TileStyleMin = {
-  gridTemplateAreas: `'food' 'drinks'`,
+  gridTemplateAreas: `'food' 'drinks' 'leg-drinks'`,
   gridTemplateColumns: "1fr",
 };
