@@ -4,7 +4,7 @@ import PageHeader from "./pageHeader";
 import xboxLogo from "../../imgs/Xbox.png";
 import psLogo from "../../imgs/playstation.png";
 import switchLogo from "../../imgs/switch.png";
-import chessLogo from "../../imgs/chess.png";
+import chessLogo from "../../imgs/knight.png";
 import { ContentPage } from "../../utils/shared";
 
 export const Games = () => {
@@ -142,6 +142,7 @@ const BoardLogo = styled(Logo)`
   object-fit: fill;
   height: 100px;
   width: 100px;
+  margin: 30px;
 `;
 const Description = styled.div``;
 const Playstation = styled(System)``;
