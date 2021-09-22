@@ -22,7 +22,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route path="/games" component={Games} />
             <Route path="/vip-room" component={VipRoom} />
-            <Route path="/contact" component={Contact} />
+            {/* <Route path="/contact" component={Contact} /> */}
             <Route path="/menu" component={Menu} />
           </Switch>
         </Content>

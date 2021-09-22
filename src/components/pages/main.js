@@ -15,12 +15,15 @@ export default class Main extends Component {
           <MainLink to={{ pathname: `/menu` }}>Menu</MainLink>{" "}
           <MainLink to={{ pathname: `/games` }}>Games</MainLink>
           <MainLink to={{ pathname: `/vip-room` }}>Vip Room</MainLink>
-          <MainLink to={{ pathname: `/contact` }}>Contact</MainLink>
+          {/* <MainLink to={{ pathname: `/contact` }}>Contact</MainLink> */}
+
         </MainContainer>
       </MainPage>
     );
   }
 }
+
+
 
 const MainPage = styled(ContentPage)``;
 

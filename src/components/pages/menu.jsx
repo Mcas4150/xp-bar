@@ -15,7 +15,7 @@ export const Menu = () => {
   //   : TileStyleMax;
   if (dimensions.width > 1300) {
     TileStyle = TileStyleMax;
-  } else if (1300 > dimensions.width > 800) {
+  } else if (800 < dimensions.width && dimensions.width < 1300) {
     TileStyle = TileStyleMid;
   } else {
     TileStyle = TileStyleMin;
@@ -79,45 +79,47 @@ export const Menu = () => {
                   <Price>500</Price>
                 </TItem>
               </TList>
-              <THeader>Main Quests</THeader>
-              <TList>
-                <TItem>
-                  <Info>
-                    <Name>Cheeseburger</Name>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  <Info>
-                    <Name>BBQ Cheeseburger</Name>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  <Info>
-                    <Name>Breakfast Burger</Name>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  <Info>
-                    <Name>Chicken Burger</Name>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  <Info>
-                    <Name>Midnight Burger</Name>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  <Info>
-                    <Name>Double Cheeseburger</Name>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-              </TList>
+              <MainQuests>
+                <THeader>Main Quests</THeader>
+                <TList>
+                  <TItem>
+                    <Info>
+                      <Name>Cheeseburger</Name>
+                    </Info>
+                    <Price>500</Price>
+                  </TItem>
+                  <TItem>
+                    <Info>
+                      <Name>BBQ Cheeseburger</Name>
+                    </Info>
+                    <Price>500</Price>
+                  </TItem>
+                  <TItem>
+                    <Info>
+                      <Name>Breakfast Burger</Name>
+                    </Info>
+                    <Price>500</Price>
+                  </TItem>
+                  <TItem>
+                    <Info>
+                      <Name>Chicken Burger</Name>
+                    </Info>
+                    <Price>500</Price>
+                  </TItem>
+                  <TItem>
+                    <Info>
+                      <Name>Midnight Burger</Name>
+                    </Info>
+                    <Price>500</Price>
+                  </TItem>
+                  <TItem>
+                    <Info>
+                      <Name>Double Cheeseburger</Name>
+                    </Info>
+                    <Price>500</Price>
+                  </TItem>
+                </TList>
+              </MainQuests>
             </Food>
             <Drinks>
               <THeader>Drinks</THeader>
@@ -368,6 +370,10 @@ const Drinks = styled(Table)`
   grid-area: drinks;
 `;
 
+const MainQuests = styled.div`
+  margin-top: 15px;
+`;
+
 const LegendaryDrinks = styled(Table)`
   grid-area: leg-drinks;
 `;
@@ -402,18 +408,18 @@ const TileStyleMax = {
   maxWidth: "1100px",
   gridTemplateAreas: `'food drinks leg-drinks'
                       'food drinks mocktails'`,
-  gridTemplateColumns: "1fr 1fr",
+  // gridTemplateColumns: "1fr 1fr",
   // gridTemplateColumns: "1fr 1fr 1fr ",
   gridTemplateColumns: `repeat(auto-fill, minmax(350px, 1fr))`,
 };
 
 const TileStyleMid = {
-  maxHeight: "800px",
-  gridTemplateAreas: `'food drinks'`,
+  // maxHeight: "800px",
+  gridTemplateAreas: `'food drinks' 'mocktails leg-drinks`,
   gridTemplateColumns: "1fr 1fr",
 };
 
 const TileStyleMin = {
-  gridTemplateAreas: `'food' 'drinks' 'leg-drinks'`,
+  gridTemplateAreas: `'food' 'drinks' 'leg-drinks' 'mocktails'`,
   gridTemplateColumns: "1fr",
 };
