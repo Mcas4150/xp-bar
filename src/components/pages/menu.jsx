@@ -36,6 +36,9 @@ export const Menu = () => {
     };
   });
 
+  // find the number of hours in a year
+  const hoursInYear = 365 * 24;
+
   return (
     <MenuPage>
       <PageHeader title="menu" />
@@ -48,42 +51,30 @@ export const Menu = () => {
                 <TItem>
                   <Info>
                     <Name>Mozzarella Sticks</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Onion Rings</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>French Fries</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Chicken Fingers</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Chicken Quesadilla</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  <Info>
-                    <Name>Cheese Quesadilla</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -93,42 +84,36 @@ export const Menu = () => {
                 <TItem>
                   <Info>
                     <Name>Cheeseburger</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>BBQ Cheeseburger</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Breakfast Burger</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Chicken Burger</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Midnight Burger</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Double Cheeseburger</Name>
-                    <Description>Lorum Ipsum</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -139,8 +124,8 @@ export const Menu = () => {
               <TList>
                 <TItem>
                   <Info>
-                    <Name>Mana Beer</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Name>Pikachu</Name>
+                    <Description>Vodka, Orange Juice, Galliano</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -148,7 +133,62 @@ export const Menu = () => {
                   {" "}
                   <Info>
                     <Name>Potion Beer</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Spicy rum, lime, Strawberry Puree, Coconut Water
+                    </Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+                <TItem>
+                  {" "}
+                  <Info>
+                    <Name>Yakuza</Name>
+                    <Description>
+                      Rum, spicy rum, Aperol, grapefruit liquor, lime juice,
+                      lemon juice, cinnamon syrup
+                    </Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+                <TItem>
+                  {" "}
+                  <Info>
+                    <Name>Zelda</Name>
+                    <Description>
+                      Gin, green apply syrup, eden flower, pineapple juice,
+                      lemon
+                    </Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+                <TItem>
+                  {" "}
+                  <Info>
+                    <Name>Portal</Name>
+                    <Description>
+                      Gin, grapefruit liquor, lemon, simple syrup, soda
+                    </Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+                <TItem>
+                  {" "}
+                  <Info>
+                    <Name>Princess Peach</Name>
+                    <Description>
+                      Whiskey, red vermouth, peach puree, lemon juice, ginger
+                    </Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+                <TItem>
+                  {" "}
+                  <Info>
+                    <Name>Fallout</Name>
+                    <Description>
+                      Vodka, apple juice, grenadine, passion fruit puree, lime
+                      juice, mint
+                    </Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -156,23 +196,9 @@ export const Menu = () => {
                   {" "}
                   <Info>
                     <Name>Take Your Heart</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Sheogorath</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Electric Rat</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Vodka, gin, triple sec, black pushkini, lime
+                    </Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -180,7 +206,7 @@ export const Menu = () => {
                   {" "}
                   <Info>
                     <Name>117</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>Midori, gin, apple juice, lime</Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -188,23 +214,19 @@ export const Menu = () => {
                   {" "}
                   <Info>
                     <Name>Covenant</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Blue Curacao, Gin, grenadine, lime, ginger ale
+                    </Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
                 <TItem>
                   {" "}
                   <Info>
-                    <Name>Princess</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Frag Grenade</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Name>Empress</Name>
+                    <Description>
+                      Vodka, bubble gum, lemon juice, grapefruit soda
+                    </Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -212,55 +234,9 @@ export const Menu = () => {
                   {" "}
                   <Info>
                     <Name>Protector</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Hunter</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Rainbow Cocktail</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Radiation</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Pandora</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Cosmopolitan</Name>
-                    <Description>Lorum Ipsum</Description>
-                  </Info>
-                  <Price>500</Price>
-                </TItem>
-                <TItem>
-                  {" "}
-                  <Info>
-                    <Name>Mohito</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Empress gin, lime, cointerau, yellow grapefruit juice
+                    </Description>
                   </Info>
                   <Price>500</Price>
                 </TItem>
@@ -273,33 +249,96 @@ export const Menu = () => {
                 <TItem>
                   <Info>
                     <Name>Pharaoh</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Brancamenta, Kahlua, raspberry cream, black rum
+                    </Description>
                   </Info>
                   <Price>1200</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Nord Warrior</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Spicy rum, lime, coconut puree, coconut water
+                    </Description>
                   </Info>
                   <Price>1200</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Master Trainer</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Vodka, fresh orange juice, galliano, aquafaba, Angostura
+                      bitters
+                    </Description>
                   </Info>
                   <Price>1200</Price>
                 </TItem>
                 <TItem>
                   <Info>
                     <Name>Vacation Juice</Name>
-                    <Description>Lorum Ipsum</Description>
+                    <Description>
+                      Malibu coconut Rum, pineapple juice, grenadine, passion
+                      fruit, lime juice
+                    </Description>
+                  </Info>
+                  <Price>1200</Price>
+                </TItem>
+                <TItem>
+                  <Info>
+                    <Name>Radiation</Name>
+                    <Description>
+                      Midori, Vodka, Rum, Lime, Lemon Soda
+                    </Description>
                   </Info>
                   <Price>1200</Price>
                 </TItem>
               </TList>
             </LegendaryDrinks>
+            <Mocktails>
+              <THeader>Mocktails</THeader>
+              <TList>
+                <TItem>
+                  <Info>
+                    <Name>Mock1</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+
+                <TItem>
+                  <Info>
+                    <Name>Mock2</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+
+                <TItem>
+                  <Info>
+                    <Name>Mock3</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+
+                <TItem>
+                  <Info>
+                    <Name>Mock4</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+
+                <TItem>
+                  <Info>
+                    <Name>Mock5</Name>
+                    <Description>Lorum Ipsum</Description>
+                  </Info>
+                  <Price>500</Price>
+                </TItem>
+              </TList>
+            </Mocktails>
           </Tables>
         </div>
       </MenuContainer>
@@ -333,6 +372,10 @@ const LegendaryDrinks = styled(Table)`
   grid-area: leg-drinks;
 `;
 
+const Mocktails = styled(Table)`
+  grid-area: mocktails;
+`;
+
 const THeader = styled.div`
   font-size: 2rem;
   font-family: retro_computer_personal_use;
@@ -357,7 +400,9 @@ const Description = styled.div`
 const TileStyleMax = {
   maxHeight: "800px",
   maxWidth: "1100px",
-  gridTemplateAreas: `'food drinks leg-drinks'`,
+  gridTemplateAreas: `'food drinks leg-drinks'
+                      'food drinks mocktails'`,
+  gridTemplateColumns: "1fr 1fr",
   // gridTemplateColumns: "1fr 1fr 1fr ",
   gridTemplateColumns: `repeat(auto-fill, minmax(350px, 1fr))`,
 };

@@ -4,6 +4,7 @@ import PageHeader from "./pageHeader";
 
 import { ContentPage } from "../../utils/shared";
 
+
 export const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
